@@ -1,0 +1,142 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Alice	crypt/m2c_2.py	/^Alice = M2Crypto.RSA.gen_key(1024, 65537)$/;"	v
+ApiRequestHandler	server/rest.py	/^class ApiRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):$/;"	c
+App	services.py	/^class App(foundation.CementApp):$/;"	c
+Bob	crypt/m2c_2.py	/^Bob = M2Crypto.RSA.gen_key(1024, 65537)$/;"	v
+Callback	callback.py	/^class Callback(object):$/;"	c
+CipherText	crypt/m2c_2.py	/^CipherText = WriteRSA.public_encrypt($/;"	v
+Client	server/client.old.py	/^class Client(ClientXMPP):$/;"	c
+Client	server/client.py	/^class Client(ClientXMPP):$/;"	c
+Cmd	callbacks/cmd.py	/^class Cmd(Callback):$/;"	c
+Download	callbacks/download.py	/^class Download(Callback):$/;"	c
+Hello	callbacks/hello.py	/^class Hello(Callback):$/;"	c
+Instance	utils/__init__.py	/^    def Instance(self):$/;"	m	class:Singleton
+Meta	server/client.old.py	/^    class Meta:$/;"	c	class:Client
+Meta	server/client.py	/^    class Meta:$/;"	c	class:Client
+Meta	services.py	/^    class Meta:$/;"	c	class:App
+Meta	services.py	/^    class Meta:$/;"	c	class:ServiceController
+MsgDigest	crypt/m2c_2.py	/^    MsgDigest = M2Crypto.EVP.MessageDigest('sha1')$/;"	v
+MsgDigest	crypt/m2c_2.py	/^MsgDigest = M2Crypto.EVP.MessageDigest('sha1')$/;"	v
+PlainText	crypt/m2c_2.py	/^    PlainText = ""$/;"	v
+ReadRSA	crypt/m2c_2.py	/^ReadRSA = M2Crypto.RSA.load_key('Bob-private.pem')$/;"	v
+RestServer	server/rest.py	/^class RestServer(threading.Thread):$/;"	c
+ServiceController	services.py	/^class ServiceController(controller.CementBaseController):$/;"	c
+ServiceLocator	services.py	/^class ServiceLocator:$/;"	c
+Signature	crypt/m2c_2.py	/^Signature = Alice.sign_rsassa_pss(MsgDigest.digest())$/;"	v
+Singleton	utils/__init__.py	/^class Singleton:$/;"	c
+Test	server/test.py	/^class Test:$/;"	c
+VerifyRSA	crypt/m2c_2.py	/^    VerifyRSA = M2Crypto.RSA.load_pub_key('Alice-public.pem')$/;"	v
+WriteRSA	crypt/m2c_2.py	/^WriteRSA = M2Crypto.RSA.load_pub_key('Bob-public.pem')$/;"	v
+__call__	utils/__init__.py	/^    def __call__(self):$/;"	m	class:Singleton	file:
+__init__	callbacks/cmd.py	/^    def __init__(self):$/;"	m	class:Cmd
+__init__	callbacks/download.py	/^    def __init__(self):$/;"	m	class:Download
+__init__	server/client.old.py	/^    def __init__(self, jid, password, server, server_port, friend_pattern, group, room, nick):$/;"	m	class:Client
+__init__	server/client.py	/^    def __init__(self, jid, password, server, server_port, friend_pattern, group, room, nick):$/;"	m	class:Client
+__init__	server/rest.py	/^    def __init__(self, host, port, server, server_port, jid, password, friend_pattern, group, room, nick):$/;"	m	class:RestServer
+__init__	utils/__init__.py	/^    def __init__(self, decorated):$/;"	m	class:Singleton
+__instancecheck__	utils/__init__.py	/^    def __instancecheck__(self, inst):$/;"	m	class:Singleton	file:
+_app	services.py	/^    _app = None$/;"	v	class:ServiceLocator
+_control	services.py	/^    _control = None$/;"	v	class:ServiceLocator
+_host	server/rest.py	/^    _host = None$/;"	v	class:RestServer
+_port	server/rest.py	/^    _port = 0;$/;"	v	class:RestServer
+_rest	services.py	/^    _rest = None$/;"	v	class:ServiceLocator
+_server	server/rest.py	/^    _server = None$/;"	v	class:RestServer
+_started	server/rest.py	/^    _started = False$/;"	v	class:RestServer
+_starttime	server/rest.py	/^    _starttime = None$/;"	v	class:RestServer
+analysis_msg	server/client.old.py	/^    def analysis_msg(self,msg):$/;"	m	class:Client
+analysis_msg	server/client.py	/^    def analysis_msg(self,msg):$/;"	m	class:Client
+app	app.py	/^app = ServiceLocator.Instance().app();$/;"	v
+app	services.py	/^    def app(self):$/;"	m	class:ServiceLocator
+arguments_override_config	services.py	/^        arguments_override_config=True$/;"	v	class:App.Meta
+base_controller	services.py	/^        base_controller = ServiceController$/;"	v	class:App.Meta
+binary_signature	crypt/m2crypto_test.py	/^binary_signature = base64.b64decode(signature)$/;"	v
+callback_handle	callback_hdl.py	/^def callback_handle(args):$/;"	f
+cert	crypt/m2crypto_test.py	/^cert=RSA.load_pub_key_bio(mb) #RSA模式没有load_pub_key_string()方法，需自行使用MemoryBuffer $/;"	v
+cert_str	crypt/m2crypto_test.py	/^cert_str=file(".\/pub_file_rsa.pem", "rb").read() #读入公钥 $/;"	v
+config	services.py	/^    def config(self):$/;"	m	class:ServiceLocator
+console_handler	app.py	/^console_handler = logging.StreamHandler()$/;"	v
+control_friends	server/rest.py	/^    def control_friends(self,status):$/;"	m	class:ApiRequestHandler
+de_s	crypt/rsa1.py	/^de_s = rsa_private_key.decrypt(en_s) $/;"	v
+debug_format	app.py	/^debug_format = "%(asctime)s (%(levelname)s) sleek : %(message)s"$/;"	v
+decode_crypt	pycrypt.py	/^def decode_crypt(str_src):$/;"	f
+default	services.py	/^    def default(self):$/;"	m	class:ServiceController
+description	services.py	/^        description = 'This is the control interface for RestXMPP server.'$/;"	v	class:ServiceController.Meta
+digest	crypt/m2crypto_test.py	/^digest=m.final() #先计算散列值 $/;"	v
+digest	crypt/m2crypto_test.py	/^digest=m.final() $/;"	v
+do_GET	server/rest.py	/^    def do_GET(self):$/;"	m	class:ApiRequestHandler
+do_HEAD	server/rest.py	/^    def do_HEAD(self):$/;"	m	class:ApiRequestHandler
+do_POST	server/rest.py	/^    def do_POST(self):$/;"	m	class:ApiRequestHandler
+download	callbacks/download.py	/^    def download(self, args = None):$/;"	m	class:Download
+empty_callback	crypt/m2c_2.py	/^def empty_callback():$/;"	f
+en_s	crypt/rsa1.py	/^en_s = rsa_public_key.encrypt(str,32) $/;"	v
+encode_crypt	pycrypt.py	/^def encode_crypt(str_src):$/;"	f
+err_hdl_1	callbacks/download.py	/^    def err_hdl_1(self, file_path, file_name):$/;"	m	class:Download
+file_tmp	crypt/rsa1.py	/^file_tmp = open('.\/priv_file_rsa.pem','r')$/;"	v
+file_tmp	crypt/rsa1.py	/^file_tmp = open('.\/pub_file_rsa.pem','r')$/;"	v
+getSshPid	bin/ssh_xmpp	/^getSshPid(){$/;"	f
+hash	crypt/rsa1.py	/^hash = SHA256.new(text).digest()$/;"	v
+hash	crypt/rsa1.py	/^hash = SHA256.new(text_check).digest()$/;"	v
+hello	server/test.py	/^    def hello(self):$/;"	m	class:Test
+join_muc	server/client.old.py	/^    def join_muc(self):$/;"	m	class:Client
+join_muc	server/client.py	/^    def join_muc(self):$/;"	m	class:Client
+key	crypt/m2crypto_test.py	/^key=RSA.load_key_string(key_str, util.no_passphrase_callback) $/;"	v
+key_str	crypt/m2crypto_test.py	/^key_str=file(".\/priv_file_rsa.pem","rb").read() #读入私钥 $/;"	v
+label	server/client.old.py	/^        label = 'client'$/;"	v	class:Client.Meta
+label	server/client.py	/^        label = 'client'$/;"	v	class:Client.Meta
+label	services.py	/^        label = 'base'$/;"	v	class:ServiceController.Meta
+label	services.py	/^        label = 'xmpp'$/;"	v	class:App.Meta
+log	services.py	/^    def log(self):$/;"	m	class:ServiceLocator
+login	server/client.old.py	/^    def login(self):$/;"	m	class:Client
+login	server/client.py	/^    def login(self):$/;"	m	class:Client
+m	crypt/m2crypto_test.py	/^m=EVP.MessageDigest("sha1") #先计算散列值 $/;"	v
+main	bin/ssh_xmpp	/^main(){$/;"	f
+mb	crypt/m2crypto_test.py	/^mb=BIO.MemoryBuffer(cert_str) $/;"	v
+message	server/client.old.py	/^    def message(self, msg):$/;"	m	class:Client
+message	server/client.py	/^    def message(self, msg):$/;"	m	class:Client
+nowdate	crypt/m2c_2.py	/^nowdate = datetime.datetime.now()$/;"	v
+ok_hdl_1	callbacks/download.py	/^    def ok_hdl_1(self, file_path, file_name):$/;"	m	class:Download
+priv	crypt/rsa1.py	/^priv = private.exportKey()$/;"	v
+priv_file	crypt/rsa1.py	/^priv_file = open('priv_file_rsa.pem','w+')$/;"	v
+private	crypt/rsa1.py	/^private= RSA.generate(1024, random_generator)$/;"	v
+pub	crypt/rsa1.py	/^pub = public.exportKey()$/;"	v
+pubfile	crypt/rsa1.py	/^pubfile = open('pub_file_rsa.pem','w+')$/;"	v
+public	crypt/rsa1.py	/^public  = private.publickey()$/;"	v
+random_generator	crypt/rsa1.py	/^random_generator = Random.new().read$/;"	v
+reply_msg	server/client.old.py	/^    def reply_msg(self,msg_src,msg_reply):$/;"	m	class:Client
+reply_msg	server/client.py	/^    def reply_msg(self,msg_src,msg_reply):$/;"	m	class:Client
+rest	server/rest.py	/^    rest = None$/;"	v	class:ApiRequestHandler
+rest	services.py	/^    def rest(self):$/;"	m	class:ServiceLocator
+result	crypt/m2crypto_test.py	/^result=key.sign(digest, "sha1") #签名后得到的数据。与原始数据一起发送出去。 $/;"	v
+result	crypt/rsa1.py	/^result = rsa_public_key.verify(hash, signature)$/;"	v
+rsa_private_key	crypt/rsa1.py	/^rsa_private_key = RSA.importKey(file_tmp.read())$/;"	v
+rsa_public_key	crypt/rsa1.py	/^rsa_public_key = RSA.importKey(file_tmp.read())$/;"	v
+run	callback.py	/^    def run(self, args = None):$/;"	m	class:Callback
+run	callbacks/cmd.py	/^    def run(self, args = None):$/;"	m	class:Cmd
+run	callbacks/hello.py	/^    def run(self, args = None):$/;"	m	class:Hello
+run	server/rest.py	/^    def run(self):$/;"	m	class:RestServer
+session_start	server/client.old.py	/^    def session_start(self, event):$/;"	m	class:Client
+session_start	server/client.py	/^    def session_start(self, event):$/;"	m	class:Client
+signature	crypt/m2crypto_test.py	/^signature = base64.b64encode(result)$/;"	v
+signature	crypt/rsa1.py	/^signature = rsa_private_key.sign(hash, '')$/;"	v
+sleekxmpp_logger	app.py	/^sleekxmpp_logger = logging.getLogger('sleekxmpp')$/;"	v
+ssh_bind	callbacks/cmd.py	/^    def ssh_bind(self, args = None):$/;"	m	class:Cmd
+start	bin/restxmpp	/^start() {$/;"	f
+start	services.py	/^    def start(self):$/;"	m	class:ServiceController
+status	services.py	/^    def status(self):$/;"	m	class:ServiceController
+stop	bin/restxmpp	/^stop() {$/;"	f
+stop	server/rest.py	/^    def stop(self):$/;"	m	class:RestServer
+stop	services.py	/^    def stop(self):$/;"	m	class:ServiceController
+str	crypt/rsa1.py	/^str = 'test rsa !!'$/;"	v
+subscribe	server/client.old.py	/^    def subscribe(self, pres):$/;"	m	class:Client
+subscribe	server/client.py	/^    def subscribe(self, pres):$/;"	m	class:Client
+test	callbacks/hello.py	/^    def test(self, args = None):$/;"	m	class:Hello
+text	crypt/rsa1.py	/^text = 'abcdefgh'$/;"	v
+text_check	crypt/rsa1.py	/^text_check = 'abcdefgh'$/;"	v
+timestamp	crypt/m2c_2.py	/^timestamp = nowdate.strftime("%Y%m%d%H%M%S")$/;"	v
+utils_decrypt_verify	m2c_crypt_sign.py	/^def utils_decrypt_verify(cipher_str,sign):$/;"	f
+utils_encrypt_sign	m2c_crypt_sign.py	/^def utils_encrypt_sign(src_str):$/;"	f
